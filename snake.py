@@ -11,7 +11,9 @@ Block x index ranges from 1 to WINDOW_WIDTH -2.
 Number of blocks in window per column = WINDOW_HEIGHT -2. 
 Block y index ranges from 1 to WINDOW_HEIGHT -2.
 '''
-
+a=5
+b=8
+print("hola",a+b)
 # setup window
 curses.initscr()
 win = curses.newwin(WINDOW_HEIGHT, WINDOW_WIDTH, 0, 0) # rows, columns
@@ -80,8 +82,9 @@ while key != ESC:
         last = snake.pop()
         win.addch(last[0], last[1], ' ')
 
-    win.addch(snake[0][0], snake[0][1], '*')
+    win.addch(1, snake[0][1], '*')
 
 curses.endwin()
 print("soy cesar")
 print(f"Final score = {score}")
+print(f"Finalistas = {score}")
