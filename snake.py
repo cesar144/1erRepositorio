@@ -11,7 +11,9 @@ Block x index ranges from 1 to WINDOW_WIDTH -2.
 Number of blocks in window per column = WINDOW_HEIGHT -2. 
 Block y index ranges from 1 to WINDOW_HEIGHT -2.
 '''
-
+a=5
+b=8
+print("hola",a+b)
 # setup window
 curses.initscr()
 win = curses.newwin(WINDOW_HEIGHT, WINDOW_WIDTH, 0, 0) # rows, columns
