@@ -80,7 +80,7 @@ while key != ESC:
         last = snake.pop()
         win.addch(last[0], last[1], ' ')
 
-    win.addch(snake[0][0], snake[0][1], '*')
+    win.addch(1, snake[0][1], '*')
 
 curses.endwin()
 print(f"Finalistas = {score}")
